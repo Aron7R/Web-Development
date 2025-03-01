@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <title>Foodie</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+      }
+      .navbar {
+        display: flex;
+        background-color: brown;
+        color: white;
+        padding: 5px;
+      }
+      .brand {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+      }
+      .navlist {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        margin-right: 100px;
+      }
+      .list {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        margin-top: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .img {
+        border-radius: 30px;
+      }
+
+      .poster {
+        background-image: url("https://media.istockphoto.com/id/1829241109/photo/enjoying-a-brunch-together.jpg?s=612x612&w=0&k=20&c=9awLLRMBLeiYsrXrkgzkoscVU_3RoVwl_HA-OT-srjQ=");
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .name {
+        margin: auto;
+        font-size: 60px;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .menu {
+        background-color: crimson;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        margin: 30px;
+        border: 3px solid white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px black;
+      }
+      .menu-img {
+        border: 2px solid white;
+        border-radius: 20px;
+      }
+      .menu-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+      }
+      .menu-btn {
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 20px;
+        font-size: 18px;
+        box-shadow: 2px 2px 5px black;
+      }
+      .row {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .veg {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="brand">
+        <img
+          class="img"
+          height="80px"
+          width="80px"
+          src="https://marketplace.canva.com/EAFpeiTrl4c/2/0/1600w/canva-abstract-chef-cooking-restaurant-free-logo-a1RYzvS1EFo.jpg"
+        />
+        <h2>Foodie</h2>
+      </div>
+      <div class="navlist">
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="poster">
+      <h1 class="name">Welcome to Foodie Resturant</h1>
+    </div>
+
+    <div class="veg">
+      <h2>Explore Continental Foods</h2>
+    </div>
+
+    <div class="row">
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+    </div>
+    <div class="veg">
+      <h2>Explore Korean Foods</h2>
+    </div>
+    <div class="row">
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+
+      <div class="menu">
+        <img
+          class="menu-img"
+          height="150px"
+          width="150px"
+          src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU="
+        />
+        <h4 class="menu-name">Pizza</h4>
+        <button class="menu-btn">Order Now</button>
+      </div>
+    </div>
+  </body>
+</html>
