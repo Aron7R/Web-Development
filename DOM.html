@@ -1,0 +1,55 @@
+<htmL>
+<head>
+<title>DOM</title>
+
+<style>
+
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="text1"></h1>
+<h3 id="text2"></h3>  
+<h2 id="text3"></h2>
+
+<div id="box">
+<p></p>
+<b></b>
+</div>
+
+<div id="New Box"></div>
+<div id="New"></div>
+
+
+<script>
+document.getElementById("text1").
+textContent = "Hello Everyone";
+
+document.getElementById("text2").
+textContent = "Welcome to Codingal";
+
+document.getElementById("text3").
+textContent = "Nice to meet you";
+
+document.getElementById("box").
+innerHTML="<p>Hello Y'all</p><b>Bye Y'all</b>";
+
+document.getElementById("New Box").
+innerHTML="<h3>Nice to Meet Y'all</h3>";
+
+
+var mytag = document.createElement("h1");
+
+mytag.textContent = "new Element";
+
+document.getElementById("New").
+appendChild(mytag);
+
+</script>
+
+</body>
+
+</htmL>
