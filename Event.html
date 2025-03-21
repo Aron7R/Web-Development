@@ -1,0 +1,102 @@
+<html>
+<head>
+<titleEvents</title>
+<style>
+body{
+margin: 0;
+padding: 0;
+background-color: beige;
+}
+#container{
+background-color: crimson;
+width: 300px;
+height: 250px;
+margin: auto;
+margin-top: 200px;
+padding: 20px;
+text-align: center;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+border: 3px solid white;
+box-shadow: 3px 3px 5px black;
+border-radius: 30px;
+}
+#age{
+width: 150px;
+height: 30px;
+border: 2px solid white;
+border-radius: 10px;
+box-shadow: 2px 2px 5px black;
+margin-bottom: 25px;
+text-align: center;
+font-weight: bold;
+}
+#check{
+padding: 10px
+border: 2px solid white;
+border-radius: 20px;
+border: 2px solid crimson;
+font-weight: bold;
+box-shadow: 2px 2px 5px black;
+}
+
+#check:hover{
+
+border: 2px solid white;
+
+background-color: crimson;
+
+color: white;
+
+transition: 0.3s;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1 id="header">Voter ID Eligibilty</h1>
+
+<input id="age" type="number" placeholder="Enter Your Age" />
+
+<br />
+
+<button id="check" onclick="VoterCheck()">Check</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+<script>
+
+function VoterCheck() {
+
+var age = document.getElementById("age").value;
+
+if (age >= 18) {
+
+document.getElementById("result").textContent =
+
+"Hurray! You are eligible !";
+
+} else {
+
+document.getElementById("result").textContent =
+
+"Sorry ! You are not eligible !";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+
