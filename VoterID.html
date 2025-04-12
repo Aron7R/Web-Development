@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Voter Checker</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body class="bg-gray-300">
+
+<div id="box1" class="bg-gray-800 h-50 x-80 m-auto mt-50
+rounded-3xl border-3 border-gray-500 text-center">
+
+<h1 class="text-center text-white font-bold text-3x1 m-2">
+Voter ID Checker
+</h1>
+
+<input class="text-center bg-gray-200 h-10 m-3 rounded-2xl 
+border-2 border-gray-500 font-bold text-x1"
+type="number"
+placeholder="Enter Age"
+id="age"/>
+
+<br />
+<button class="text-center bg-gray-200 px-5 py-2 m-2 rounded-lg
+font-bold text-x1"
+id="check"
+onclick="Check()"
+>
+Check
+</button>
+</div>
+
+<div
+id="box2"
+class="bg-gray-800 h-15 w-80 m-auto mt-10 rounded-3xl border-3
+border-gray-500 text-center font-bold text-2x1 text-white">
+<h2 id="result"></h2>
+</div>
+
+
+<script>
+function Check(){
+var age = document.getElementById("age").value;
+if(age>18){
+document.getElementById("result").textContent="You are Eligible for Vote"  
+}else{
+document.getElementById("result").textContent="You are Not Eligible for Vote"
+}
+
+}
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
